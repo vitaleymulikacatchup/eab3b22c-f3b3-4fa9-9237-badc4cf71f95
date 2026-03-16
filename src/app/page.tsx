@@ -10,7 +10,7 @@ import TestimonialCardTwo from "@/components/sections/testimonial/TestimonialCar
 import MetricCardEleven from "@/components/sections/metrics/MetricCardEleven";
 import ContactCTA from "@/components/sections/contact/ContactCTA";
 import FooterBase from "@/components/sections/footer/FooterBase";
-import { Heart, Paw, Star, HeartHandshake, Smile, TrendingUp } from "lucide-react";
+import { Heart, Star, HeartHandshake, Smile, TrendingUp } from "lucide-react";
 
 export default function LandingPage() {
   return (
@@ -46,12 +46,12 @@ export default function LandingPage() {
           description="Welcome to Pawsitive Haven, where we provide shelter, care, and love to animals in need. Help us find forever homes for the pets waiting for their families."
           tag="Rescue & Rehoming"
           tagIcon={Heart}
-          tagAnimation="entrance-slide"
+          tagAnimation="slide-up"
           buttons={[
             { text: "Explore Adoptable Pets", href: "#featured" },
             { text: "Learn More", href: "#about" }
           ]}
-          buttonAnimation="entrance-slide"
+          buttonAnimation="slide-up"
           imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/default/no-image.jpg?id=lwdj3n"
           imageAlt="happy dogs cats playing together shelter"
           showDimOverlay={true}
@@ -62,11 +62,11 @@ export default function LandingPage() {
       <div id="about" data-section="about">
         <TextAbout
           tag="Our Mission"
-          tagIcon={Paw}
-          tagAnimation="entrance-slide"
+          tagIcon={Heart}
+          tagAnimation="slide-up"
           title="Dedicated to Animal Welfare"
           buttons={[{ text: "Get Involved", href: "#contact" }]}
-          buttonAnimation="entrance-slide"
+          buttonAnimation="slide-up"
           useInvertedBackground={false}
         />
       </div>
@@ -77,7 +77,7 @@ export default function LandingPage() {
           description="Meet some of our wonderful animals ready for adoption. Each one has a unique personality and story."
           tag="Available Now"
           tagIcon={Star}
-          tagAnimation="entrance-slide"
+          tagAnimation="slide-up"
           animationType="slide-up"
           textboxLayout="default"
           useInvertedBackground={false}
@@ -100,7 +100,7 @@ export default function LandingPage() {
             }
           ]}
           buttons={[{ text: "View Full Catalog", href: "#" }]}
-          buttonAnimation="entrance-slide"
+          buttonAnimation="slide-up"
         />
       </div>
 
@@ -110,7 +110,7 @@ export default function LandingPage() {
           description="Our comprehensive services ensure every animal receives the care they deserve."
           tag="Services"
           tagIcon={HeartHandshake}
-          tagAnimation="entrance-slide"
+          tagAnimation="slide-up"
           animationType="slide-up"
           textboxLayout="default"
           useInvertedBackground={false}
@@ -135,7 +135,7 @@ export default function LandingPage() {
           description="Hear from families who found their perfect companions at Pawsitive Haven."
           tag="Happy Endings"
           tagIcon={Smile}
-          tagAnimation="entrance-slide"
+          tagAnimation="slide-up"
           animationType="slide-up"
           textboxLayout="default"
           useInvertedBackground={false}
@@ -168,7 +168,7 @@ export default function LandingPage() {
           description="Track the difference we're making together in the lives of animals."
           tag="Impact Metrics"
           tagIcon={TrendingUp}
-          tagAnimation="entrance-slide"
+          tagAnimation="slide-up"
           animationType="slide-up"
           textboxLayout="default"
           useInvertedBackground={false}
@@ -193,7 +193,7 @@ export default function LandingPage() {
         <ContactCTA
           tag="Get Involved"
           tagIcon={Heart}
-          tagAnimation="entrance-slide"
+          tagAnimation="slide-up"
           title="Join Our Mission to Save Lives"
           description="Whether you want to adopt, volunteer, donate, or simply learn more, we'd love to hear from you. Together, we can give every animal a second chance."
           buttons={[
@@ -201,7 +201,7 @@ export default function LandingPage() {
             { text: "Volunteer", href: "mailto:volunteer@pawsitivehaven.com" },
             { text: "Make a Donation", href: "https://donate.pawsitivehaven.com" }
           ]}
-          buttonAnimation="entrance-slide"
+          buttonAnimation="slide-up"
           background={{ variant: "radial-gradient" }}
           useInvertedBackground={false}
         />
